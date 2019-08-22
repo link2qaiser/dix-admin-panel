@@ -1,0 +1,131 @@
+.accordion-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-ul .inner {
+    padding-left: 1em;
+    overflow: hidden;
+    display: none;
+}
+
+.accordion-ul .inner.show {
+    display: block;
+}
+
+.accordion-ul li {
+    margin: .5em 0;
+}
+
+.inner li {
+    margin-left: 2em;
+}
+
+.accordion-ul li a.toggle {
+    width: 100%;
+    display: block;
+    padding: .75em;
+    border-radius: 0.15em;
+}
+
+.accordion-ul.inner li a {
+    color: aliceblue;
+    transition: all .3s;
+}
+
+.accordion-ul.inner li a:hover {
+    text-decoration: underline;
+}
+
+.toggle-wrap {
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    /*disable selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 28px;
+    margin-right: 40px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    color: #fff;
+}
+
+.toggle-bar,
+.toggle-bar::before,
+.toggle-bar::after,
+.toggle-wrap.active .toggle-bar,
+.toggle-wrap.active .toggle-bar::before,
+.toggle-wrap.active .toggle-bar::after,
+.sidebar,
+.sidebar.sidebar-collapsed {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.toggle-bar {
+    width: 38px;
+    margin: 10px 0;
+    position: relative;
+    border-top: 6px solid #fff;
+    display: block;
+}
+
+.toggle-bar::before,
+.toggle-bar::after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: 6px;
+    width: 38px;
+    position: absolute;
+    top: -16px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -ms-transform-origin: 13%;
+    -webkit-transform-origin: 13%;
+    transform-origin: 13%;
+}
+
+.toggle-bar::after {
+    top: 4px;
+}
+
+.toggle-wrap.active .toggle-bar {
+    border-top: 6px solid transparent;
+}
+
+.toggle-wrap.active .toggle-bar::before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.toggle-wrap.active .toggle-bar::after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.sidebar-collapsed {
+    margin-left: -165px;
+}
+
+@media (max-width: 991px) {
+    .toggle-wrap {
+        display: none;
+    }
+    .sidebar-collapsed {
+        margin-left: -280px;
+    }
+}
