@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <link href="./assets/css/light-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <link href="./assets/css/custom-styles.css " rel="stylesheet" />
 </head>
 
@@ -27,8 +27,8 @@
          Tip 2: you can also add an image using data-image tag -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="javascript:void(0);" class="simple-text">
-                        Creative Tim
+                    <a href="./dashboard.php" class="simple-text">
+                        Dix Admin Panel
                     </a>
                     <a href="javascript:void(0);">
                         <div class="toggle-wrap">
@@ -36,58 +36,43 @@
                         </div>
                     </a>
                 </div>
-                <ul class="nav accordion accordion-ul">
-                    <li class="nav-item active">
-                        <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                <ul class="nav">
+                    <li class="nav-item <?php echo (!empty($page) && @$page=='dashboard')?'active':''; ?>">
+                        <a class="nav-link" href="./dashboard.php">
                             <p>Dashboard</p>
                             <i class="nc-icon nc-chart-pie-35"></i>
                         </a>
-                        <ul class="inner accordion-ul">
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
-                            <li><a href="">Option 3</a></li>
-                        </ul>
                     </li>
-                    <li>
-                        <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                    <li class="nav-item <?php echo (!empty($page) && @$page=='user')?'active':''; ?>">
+                        <a class="nav-link " href="./user.php">
                             <p>User Profile</p>
                             <i class="nc-icon nc-circle-09"></i>
                         </a>
-                        <ul class="inner accordion-ul">
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
-                            <li><a href="">Option 3</a></li>
-                        </ul>
                     </li>
-                    <li>
-                        <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                    <li class="nav-item <?php echo (!empty($page) && @$page=='table')?'active':''; ?>">
+                        <a class="nav-link" href="./table.php">
                             <p>Table List</p>
                             <i class="nc-icon nc-notes"></i>
                         </a>
-                        <ul class="inner accordion-ul">
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
-                            <li><a href="">Option 3</a></li>
-                        </ul>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link toggle-accordion" href="javascript:void(0);">
                             <p>Typography</p>
                             <i class="nc-icon nc-paper-2"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link toggle-accordion" href="javascript:void(0);">
                             <p>Icons</p>
                             <i class="nc-icon nc-atom"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link toggle-accordion" href="javascript:void(0);">
                             <p>Maps</p>
                             <i class="nc-icon nc-pin-3"></i>
                         </a>
-                        <ul class="inner accordion-ul">
+                        <ul class="inner accordion-ul" style="display:none">
                             <li>Option 1</li>
                             <li>Option 2</li>
                             <li>Option 3</li>
@@ -171,83 +156,4 @@
             </nav>
             <!-- End Navbar -->
             <div class="content">
-                <div class="container-fluid">
-
-                </div>
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <nav>
-                            <ul class="footer-menu">
-                                <li>
-                                    <a href="#">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Company
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Portfolio
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Blog
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="copyright text-center">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script>
-                                <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                            </p>
-                        </nav>
-                    </div>
-                </footer>
-            </div>
-        </div>
-</body>
-<!--   Core JS Files   -->
-<script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<script>
-    $('.toggle-accordion').click(function(e) {
-        e.preventDefault();
-
-        var $this = $(this);
-        if ($this.closest('.sidebar').hasClass('sidebar-collapsed')) {
-            return;
-        }
-        if ($this.next().hasClass('show')) {
-            $this.next().removeClass('show');
-            $this.next().slideUp(350);
-        } else {
-            $this.parent().parent().find('li .inner').removeClass('show');
-            $this.parent().parent().find('li .inner').slideUp(350);
-            $this.next().toggleClass('show');
-            $this.next().slideToggle(350);
-        }
-    });
-    $('.navbar-toggler.navbar-toggler-right').on('click', function() {
-        $('.toggle-wrap').hide();
-        let sidebar = $('.sidebar').toggleClass('sidebar-collapsed');
-    });
-    (function() {
-        $('.toggle-wrap').on('click', function() {
-            $(this).toggleClass('active');
-            $('.sidebar').toggleClass('sidebar-collapsed');
-        });
-    })();
-</script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<!-- <script src="./assets/js/plugins/bootstrap-switch.js"></script> -->
-<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
-<!-- <script src="./assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script> -->
-
-</html>
+                <div class="container-fluid mb-5">

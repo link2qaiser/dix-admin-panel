@@ -129,3 +129,20 @@
         margin-left: -280px;
     }
 }
+
+.table-col-action {
+    cursor: pointer;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    transition: all 0.3s;
+}
+
+.table-col-action:hover {
+    background: #d1d1d1;
+}
+
+.table-col-action .dropdown-toggle::after {
+    border: none;
+}
