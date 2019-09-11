@@ -2626,7 +2626,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
     visibility: hidden;
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: block;
     z-index: 9000;
     position: absolute;
