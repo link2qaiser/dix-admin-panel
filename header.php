@@ -20,19 +20,17 @@
 
 <body>
     <div class="wrapper">
+        <section>
         <div class="sidebar sidebar-collapsed" data-color="blue">
-            <!--
-         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
- 
-         Tip 2: you can also add an image using data-image tag -->
-            <div class="sidebar-wrapper">
+
+            <div class="sidebar-wrapper" >
                 <div class="logo">
                     <a href="./dashboard.php" class="simple-text">
-                        Dix Admin Panel
+                       <h5 style="padding-top: 20px;"><b>Admin Panel</b></h5>
                     </a>
                     <a href="javascript:void(0);">
                         <div class="toggle-wrap">
-                            <span class="toggle-bar"></span>
+                            <span class="toggle"><i class="fa fa-xs fa-bars" aria-hidden="true"></i></span>
                         </div>
                     </a>
                 </div>
@@ -55,14 +53,14 @@
                             <i class="nc-icon nc-notes"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                    <li class="nav-item <?php echo (!empty($page) && @$page=='typography')?'active':''; ?>">
+                        <a class="nav-link" href="./typography.php">
                             <p>Typography</p>
                             <i class="nc-icon nc-paper-2"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                        <a class="nav-link" href="javascript:void(0);">
                             <p>Icons</p>
                             <i class="nc-icon nc-atom"></i>
                         </a>
@@ -72,12 +70,30 @@
                             <p>Maps</p>
                             <i class="nc-icon nc-pin-3"></i>
                         </a>
-                        <ul class="inner accordion-ul" style="display:none">
-                            <li>Option 1</li>
-                            <li>Option 2</li>
-                            <li>Option 3</li>
+                        <ul class="inner accordion-li" style="display:none">
+                           
+                                <li class="nav-item"> 
+                             <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                               <p>Option 1</p>
+                                <i class="nc-icon nc-atom"></i>
+                              </a>
+                          </li>
+                            <li> 
+                              <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                                <p>Option 2</p>
+                               <i class="nc-icon nc-atom"></i>
+                              </a>
+                          </li>
+                            <li> 
+                               <a class="nav-link toggle-accordion" href="javascript:void(0);">
+                                <p>Option 2</p>
+                               <i class="nc-icon nc-atom"></i>
+                            </a>
+                          </li>
+                
                         </ul>
                     </li>
+
                     <li>
                         <a class="nav-link toggle-accordion" href="javascript:void(0);">
                             <p>Notifications</p>
@@ -87,6 +103,7 @@
                 </ul>
             </div>
         </div>
+        </section>
         <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
