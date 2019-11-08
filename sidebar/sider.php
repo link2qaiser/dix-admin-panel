@@ -1,17 +1,35 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Sidebar</h3>
-                <strong>BS</strong>
+                <strong>SB</strong>
             </div>
 
             <ul class="list-unstyled components">
-                                <li  class="active">
-            <a href="index.php">
-                <i class="fas fa-question"></i>
+                <li>
+                    <a href="index4.php">
+                        <i class="fas fa-home"></i>
                         Dashboard
-                </a>
+                    </a>
                 </li>
                 <li>
+                    <a href="tabel.php">
+                        <i class="fas fa-tabel"></i>
+                        Tabel
+                    </a>
+                </li>
+                <li>
+                    <a href="form.php">
+                        <i class="fas fa-form"></i>
+                        Forms
+                    </a>
+                </li>
+                <li>
+                    <a href="map.php">
+                        <i class="fas fa-form"></i>
+                        Maps
+                    </a>
+                </li>                                                                
+                <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-home"></i>
                         Home
@@ -29,9 +47,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="tabel.php">
+                    <a href="#">
                         <i class="fas fa-briefcase"></i>
-                        Tabel
+                        About
                     </a>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-copy"></i>
