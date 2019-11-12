@@ -28,8 +28,51 @@
                         <i class="fas fa-form"></i>
                         Maps
                     </a>
-                </li>                                                                
-                <li class="active">
+                </li>
+                <li>
+                    <a href="buttons.php">
+                        <i class="fas fa-form"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li>
+                    <a href="caresol.php">
+                        <i class="fas fa-form"></i>
+                        Carousel
+                    </a>
+                </li>
+                <li>
+                    <a href="jumbotron.php">
+                        <i class="fas fa-form"></i>
+                        Jumbotron
+                    </a>
+                </li>
+                <li>
+                    <a href="navbar.php">
+                        <i class="fas fa-form"></i>
+                        Navbar
+                    </a>
+                </li>
+                <li>
+                    <a href="progressbar.php">
+                        <i class="fas fa-form"></i>
+                        Progress
+                    </a>
+                </li>
+                <li>
+                    <a href="spinner.php">
+                        <i class="fas fa-form"></i>
+                        Spinner
+                    </a>
+                </li>
+                <li>
+                    <a href="accordion.php">
+                        <i class="fas fa-form"></i>
+                        Accordains
+                    </a>
+                </li>
+                                                                                                                                                                                                       
+               <!--  <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-home"></i>
                         Home
@@ -84,7 +127,7 @@
                         <i class="fas fa-paper-plane"></i>
                         Contact
                     </a>
-                </li>
+                </li> -->
             </ul>
 
             <ul class="list-unstyled CTAs">
