@@ -2,6 +2,16 @@
     DEMO STYLE
 */
 
+
+
+
+  
+
+
+
+
+
+
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
@@ -70,7 +80,7 @@ span {
 
 #sidebar.active {
     min-width: 80px;
-    max-width: 80px;
+    max-width: 100px;
     text-align: center;
 }
 
@@ -210,9 +220,9 @@ a.article:hover {
 @media (max-width: 768px) {
     #sidebar {
         min-width: 80px;
-        max-width: 80px;
+        max-width: 100px;
         text-align: center;
-        margin-left: -80px !important;
+        margin-left: -100px !important;
     }
     .dropdown-toggle::after {
         top: auto;

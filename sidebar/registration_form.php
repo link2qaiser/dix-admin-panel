@@ -16,12 +16,20 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
+            <h5 class="card-title text-center">Registration Form</h5>
             <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
+                <label for="inputEmail">Name</label>
+              </div>
+              <div class="form-label-group">
+                <input type="" id="inputEmail" class="form-control" placeholder="Phone Number" required autofocus>
+                <label for="inputEmail">Phone Number</label>
+              </div>
               <div class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                 <label for="inputEmail">Email address</label>
-              </div>
+              </div>              
               <div class="form-label-group">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <label for="inputPassword">Password</label>
@@ -30,24 +38,22 @@
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember password</label>
               </div>
-              <a href="index4.php" class="btn btn-lg btn-primary btn-block text-uppercase">Sign in</a>
-              <div><hr>
-               <a class="link" href="registration_form.php" style="color: blue;">Create Your Account</a>
-             </div>
-           </form>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <style type="text/css">
-  body,
-  html {
-    padding-top: 110px; 
-    height: 100%;
-    background: #60a3bc !important;
-  }
-</style>
+              <a href="index4.php" class="btn btn-lg btn-primary btn-block text-uppercase">Sign up</a>
+              <hr>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style type="text/css">
+    body,
+    html {
+      padding-top: 80px; 
+      height: 100%;
+      background: #60a3bc !important;
+    }
+  </style>
 </body>
 </html>
 
