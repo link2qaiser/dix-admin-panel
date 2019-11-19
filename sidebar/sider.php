@@ -6,7 +6,7 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="index4.php">
+                    <a href="index.php">
                         <i class="fas fa-home"></i>
                         Dashboard
                     </a>
@@ -69,12 +69,6 @@
                     <a href="accordion.php">
                         <i class="fas fa-form"></i>
                         Accordains
-                    </a>
-                </li>
-                <li>
-                    <a href="graphs.php">
-                        <i class="fas fa-form"></i>
-                        Graphs
                     </a>
                 </li>                
                 

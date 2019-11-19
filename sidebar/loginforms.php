@@ -30,7 +30,7 @@
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember password</label>
               </div>
-              <a href="index4.php" class="btn btn-lg btn-primary btn-block text-uppercase">Sign in</a>
+              <a href="index.php" class="btn btn-lg btn-primary btn-block text-uppercase">Sign in</a>
               <div><hr>
                <a class="link" href="registration_form.php" style="color: blue;">Create Your Account</a>
              </div>
